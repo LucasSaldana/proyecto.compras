@@ -8,12 +8,60 @@
 </head>
 <body>
     <div class="header">
-        Compras Compartidas
+        <img src="Comp.PNG" alt="">
     </div>
     <div class="nav"></div>
-    <div class="registro"></div>
-    <div class="compras"></div>
-    <div class="consultas"></div>
+    <div class="container" id="registro">
+        <div id="titulo"><h1>Personas</h1></div>
+        <div id="ingresoPersona">
+            <h1>Registro</h1>
+            <form>
+                <div>
+                <label>Nombre</label> <input type="text" placeholder="Nombre" id="nombre">
+                <label>Sección</label> <input type="text" placeholder="Sección" id="seccion">
+                <label>Email</label> <input type="text" placeholder="Email" id="email"> <br>
+                </div>
+                <div id="btn">
+                <input type="button" value="Agregar" id="agregarP">
+                </div>
+            </form>
+        </div>
+        <div id="lista">
+            <h1>Visualización</h1>
+            <ul>
+                <li>Ana Vega -Sección: 2 - anavega@gmail.com</li>
+                <li>Fernando García -Sección: 3 - garciaf@gmail.com</li>
+                <li>Roberto López -Sección: 1 - robertolopez@yahoo.com</li>
+                <li>Victoria Alvariza -Sección: 1 - valvariza@gmail.com</li>
+            </ul>
+        </div>
+    </div>
+    <div class="container" id="compras">
+        <div id="titulo"><h1>Compras</h1></div>
+        <div id="ingresoPersona">
+            <h1>Registro</h1>
+            <form>
+                <div>
+                <label>Nombre</label> <select name="nombres" id="nombres">
+                    <option value="Ana Vega">Ana Vega</option>
+                    <option value="Fernando García">Fernando García</option>
+                    <option value="Roberto López">Roberto López</option>
+                    <option value="Victoria Alvariza">Victoria Alvariza</option>
+                </select>
+                <label>Descripción</label> <input type="text" placeholder="Descripción" id="descripcion">
+                <label>Monto</label> <input type="text" id="monto"> <br>
+                </div>
+                <div>
+                    <p>Correspone a:</p>
+                    <input type="checkbox" name="" id="">
+                </div>
+                <div id="btn">
+                <input type="button" value="Agregar" id="agregarP">
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="container" id="consultas"></div>
     
 </body>
 </html>
