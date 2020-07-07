@@ -51,14 +51,82 @@
                 <label>Descripción</label> <input type="text" placeholder="Descripción" id="descripcion">
                 <label>Monto</label> <input type="text" id="monto"> <br>
                 </div>
-                <div>
+                <div id="corresponde">
                     <p>Correspone a:</p>
-                    <input type="checkbox" name="" id="">
+                    <input type="checkbox" name="Correspone" id="ana"> <label>Ana Vega</label> <br>
+                    <input type="checkbox" name="Correspone" id="fernando"> <label>Fernando García</label> <br>
+                    <input type="checkbox" name="Correspone" id="roberto"> <label>Roberto López</label> <br>
+                    <input type="checkbox" name="Correspone" id="victoria"> <label>Victoria Alvariza</label> <br>
                 </div>
                 <div id="btn">
                 <input type="button" value="Agregar" id="agregarP">
                 </div>
             </form>
+        </div>
+        <div id="devolucion">
+            <h1>Reintegro</h1>
+            <form>
+                <div>
+            <label>Se reintegra la compra: </label>
+                <select name="selector" id="selector">
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+                </div>
+                <div id="btn">
+                    <input type="button" value="Reintegro" id="reintegroP">
+                </div>
+            </form>   
+        </div>
+        <div id="visualizacion">
+            <h1>Visualización</h1>
+            <div>
+            <label>Orden: </label>
+            <input type="radio" name="orden" value="numero"><label>número</label>
+            <input type="radio" name="orden" value="nombre"><label>nombre</label>
+            </div>
+            <div id="tablas">
+                <table border="1">
+                    <thead>
+                        <th>NUMERO</th>
+                        <th>RESPONSABLE</th>
+                        <th>DESCRIPCION</th>
+                        <th>MONTO</th>
+                        <th>PARTICIPANTES</th>
+                        <th>ESTADO</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Victoria Alvariza</td>
+                            <td>Café especial con leche y con azúcar</td>
+                            <td>990</td>
+                            <td>Ana Vega, Ferndando García, Roberto López</td>
+                            <td>reintegrado</td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td>2</td>
+                            <td>Ana Vega</td>
+                            <td>Ensaladas común y condimentos</td>
+                            <td>450</td>
+                            <td>Ana Vega, Victoria Alvariza</td>
+                            <td>pendiente</td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td>3</td>
+                            <td>Ana Vega</td>
+                            <td>Sopas</td>
+                            <td>300</td>
+                            <td>Fernando García, Roberto López, Victoria Alvariza</td>
+                            <td>pendiente</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
     </div>
     <div class="container" id="consultas"></div>
