@@ -129,7 +129,44 @@
             </div>
         </div>
     </div>
-    <div class="container" id="consultas"></div>
+    <div class="container" id="consultas">
+        <h1>Consultas</h1>
+    <form>
+        <div>
+            <p id="pendientes">Pagos/Cobros pendientes por persona</p>
+            <label>Persona: </label>
+            <select name="persona" id="persona">
+                <option value="Ana Vega">Ana Vega</option>
+                <option value="Fernando García">Fernando García</option>
+                <option value="Roberto López">Roberto López</option>
+                <option value="Victoria Alvariza">Victoria Alvariza</option>
+            <div id="btn">
+                <input type="button" value="Consultar totales" id="button">
+            </div>
+        </select>
+        <p>Participó en total por $225</p>
+        <p>Responsable de compras $750</p>
+        <p id="pendientes">Descripción</p>
+            <div>
+                <p id="palabra">Palabra a Buscar: </p>
+                <input type="text" name="buscar" id="buscar">
+                <select name="consultar" id="consultar">
+                    <option value="Consultar compras">Consultar compras</option>
+                </select>
+            </div>
+            <h3 id="resultado">Resultado(se muestra primera coincidencia)</h3>
+            <ul>
+                <li type="disc">Compra 1 Café especial con leche y con azúcar</li>
+                <li type="disc">Compra 2 Ensaldas común y condimentos</li>
+            </ul>
+            <p id="pendientes">Gráfica</p>
+            <div>
+            <p id="palabra">Se muestra cantidad de compras totales por rango de a $100(0-99, 100-199, etc)</p>
+            <input type="button" value="Graficar">
+            </div>
+        </div>
+    </form>
+    </div>
     
 </body>
 </html>
